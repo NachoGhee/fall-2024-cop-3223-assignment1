@@ -47,7 +47,8 @@ double calculateDistance()
   x2 = askForUserInput();
   printf("Enter y2 = ");
   y2 = askForUserInput();
-
+  printf("Point #1 entered: x1 = %lf; y1 =%lf\n", x1, y1);
+  printf("Point #2 entered: x2 = %lf; y2 =%lf\n", x2, y2);
   double distance = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
   
   printf("The distance between the two points is %lf\n", distance);
@@ -86,6 +87,9 @@ double calculateWidth()
   printf("Enter y2 = ");
   y2 = askForUserInput();
   double width = fabs(x2 - x1);
+  
+  printf("Point #1 entered: x1 = %lf; y1 =%lf\n", x1, y1);
+  printf("Point #2 entered: x2 = %lf; y2 =%lf\n", x2, y2);
   printf("The width of the city encompassed by your request is %lf\n", width);
   //return 1 for easy difficulty
   return 1.0;
@@ -103,6 +107,8 @@ double calculateHeight()
   printf("Enter y2 = ");
   y2 = askForUserInput();
   double height = fabs(y2 - y1);
+  printf("Point #1 entered: x1 = %lf; y1 =%lf\n", x1, y1);
+  printf("Point #2 entered: x2 = %lf; y2 =%lf\n", x2, y2);
   printf("The height of the city encompassed by your request is %lf\n", height);
   return 1.0;
 }
